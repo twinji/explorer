@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Space Survival </title>
+        <script type = "text/javascript" src = "game.js"> </script>
+        <style>
+            html, body {
+                padding: 0;
+                margin: 0;
+                background-color : black;
+            }
+            #background, #canvas, #overlay, #overlay2 {
+                margin: auto auto;
+                padding: 0;
+                display: block;
+                position: absolute;
+                left: 0; top: 0;
+            }
+            #background {
+                z-index: 19;
+                background-color: black;
+            }
+            #canvas {z-index: 20;}
+            #overlay {z-index: 21;}
+            #overlay2 {z-index: 22;}
+            
+            #container {
+                position: relative; 
+                cursor: none;
+                width: 100vw;
+                height: 100vh;
+                overflow-x: hidden;
+                overflow-y: hidden;
+            }
+			span {
+				font-family: sans-serif;
+				color: white;
+				font-size: 16px;
+                text-align: center;
+			}
+        </style>
+    </head>
+    <body onload = "main()">
+        <div id = "container">
+            <canvas id = "background"> </canvas>
+            
+            <canvas id = "canvas">
+                <span> Please install Google Chrome. </span>
+            </canvas>
+            
+            <canvas id = "overlay"> </canvas>
+            
+            <canvas id = "overlay2"> </canvas>
+        </div>
+    </body>
+</html>
